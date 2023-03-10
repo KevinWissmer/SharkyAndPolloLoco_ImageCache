@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: whitesmoke;
@@ -13,14 +13,17 @@ img {
     margin: 16px;
 }
 
-.content{
+.content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: calc(100% - 200px);
+    overflow-y: scroll;
 }
 
-.loading_bar_frame{
+.loading_bar_frame {
     height: 25px;
     width: 200px;
     position: relative;
@@ -30,7 +33,7 @@ img {
     border: 3px solid rgb(13, 13, 21);
 }
 
-.loading_bar_frame div{
+.loading_bar_frame div {
     position: absolute;
     top: 0;
     left: -100%;
@@ -40,12 +43,47 @@ img {
 }
 
 
-header, footer{
-    min-height: 100px;
+header, footer {
+    height: 100px;
     width: 100%;
     background-color: rgb(31, 30, 50);
-    border-bottom: 3px solid rgb(13, 13, 21);
     display: flex;
     align-items: center;
+}
+
+header {
+    border-bottom: 3px solid rgb(13, 13, 21);
     justify-content: center;
+}
+
+footer {
+    border-top: 3px solid rgb(13, 13, 21);
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 16px;
+}
+
+a:hover {
+    color: rgb(86, 79, 213);
+}
+
+
+
+
+.content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: rgb(13, 13, 21);
+    border-radius: 10px;
+    border: 3px solid rgb(13, 13, 21);
 }
