@@ -1,0 +1,1 @@
+let spinner = "warten"

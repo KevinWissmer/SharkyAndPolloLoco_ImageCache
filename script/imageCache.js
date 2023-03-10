@@ -14,7 +14,7 @@ const loadSingleImage = path => {
   })
 }
 
-async function loadImagesAllImages() {
+async function loadAllImages() {
   for (let i = 0; i < imageCacheData.length; i++) {
     const path = imageCacheData[i];
     try {
