@@ -15,10 +15,10 @@ function loadContent() {
 
 function initLoadingBar() {
     let container = document.getElementById('content');
-    container.innerHTML = loadingBar;
+    container.innerHTML += loadingBar;
 }
 
 function showSpinner() {
     let container = document.getElementById('content');
-    container.innerHTML = spinner;
+    container.innerHTML += spinner;
 }
