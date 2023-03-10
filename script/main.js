@@ -1,5 +1,6 @@
 async function init() {
     showSpinner();
+    initLoadingBar();
     await loadAllImages();
     loadContent();
 }
@@ -10,6 +11,11 @@ function loadContent() {
     for (let imgKey in totalImageCache) {
         container.appendChild(totalImageCache[imgKey]);
     }
+}
+
+function initLoadingBar() {
+    let container = document.getElementById('content');
+    container.innerHTML = loadingBar;
 }
 
 function showSpinner() {
