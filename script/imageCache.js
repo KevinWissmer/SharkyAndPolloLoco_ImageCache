@@ -31,6 +31,5 @@ async function loadAllImages() {
 function setLoadingBarForward(i) {
   let percentage = i / imageCacheData.length * 100;
   let loadingBar = document.getElementById('loading_bar');
-  console.log(percentage);
   loadingBar.style.left = `-${100 - percentage}%`; 
 }
