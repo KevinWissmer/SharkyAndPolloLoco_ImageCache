@@ -1,5 +1,4 @@
 async function init() {
-    showSpinner();
     initLoadingBar();
     await loadAllImages();
     loadContent();
@@ -15,10 +14,5 @@ function loadContent() {
 
 function initLoadingBar() {
     let container = document.getElementById('content');
-    container.innerHTML += loadingBar;
-}
-
-function showSpinner() {
-    let container = document.getElementById('content');
-    container.innerHTML += spinner;
+    container.innerHTML = loadingBar;
 }
